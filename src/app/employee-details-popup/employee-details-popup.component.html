@@ -1,0 +1,12 @@
+<div class="popup-content">
+    <h2>Employee Details</h2>
+    <p><strong>Name:</strong> {{ employee.name }}</p>
+    <p><strong>Designation:</strong> {{ employee.designation }}</p>
+    <p><strong>Joining Date:</strong> {{ employee.joiningDate }}</p>
+    <p><strong>Project Type:</strong> {{ employee.projectType }}</p>
+    <p><strong>Qualification:</strong> {{ employee.qualification }}</p>
+    <p><strong>Status:</strong> {{ employee.isActive ? 'Active' : 'Inactive' }}</p>
+    <button (click)="closePopup()" class="close-button">Close</button>
+</div>
+
+  

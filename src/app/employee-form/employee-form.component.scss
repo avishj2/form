@@ -1,0 +1,78 @@
+/* employee-form.component.scss */
+
+.form-container {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  input[type="text"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+
+  select {
+    height: 40px;
+  }
+
+  input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+
+  button {
+    align-items: center;
+    background-color: #007bff;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #0056b3;
+    }
+  }
+
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    max-width: 100%;
+    padding: 20px;
+
+    label {
+      font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="date"],
+    select {
+      font-size: 14px;
+    }
+
+    button {
+      font-size: 14px;
+    }
+  }
+}
+
+

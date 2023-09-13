@@ -1,0 +1,62 @@
+/* employee-details-popup.component.scss */
+
+.popup-content {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  .popup-content h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .popup-content p {
+    margin: 10px 0;
+  }
+  
+  .popup-content button.close-button {
+    background-color: #ff5555;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .popup-content button.close-button:hover {
+    background-color: #ff3333;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .popup-content {
+      max-width: 100%;
+      padding: 10px;
+    }
+  
+    .popup-content h2 {
+      font-size: 18px;
+    }
+  
+    .popup-content p {
+      font-size: 14px;
+    }
+  
+    .popup-content button.close-button {
+      font-size: 14px;
+      padding: 6px 12px;
+    }
+  }
+  

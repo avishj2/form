@@ -1,0 +1,34 @@
+<div class="form-container">
+  <label for="name">Name:</label>
+  <input type="text" id="name" [(ngModel)]="employee.name" placeholder="Enter employee name" />
+
+  <label for="designation">Designation:</label>
+  <input type="text" id="designation" [(ngModel)]="employee.designation" placeholder="Enter designation" />
+
+  <label for="joiningDate">Joining Date:</label>
+  <input type="date" id="joiningDate" [(ngModel)]="employee.joiningDate" />
+   Salary : {{ this.employee.salaryLatest }}
+  <label for="projectType">Project Type:</label>
+  <select id="projectType" name="projectType" [(ngModel)]="employee.projectType" required>
+    <option value="" disabled>Select a project type</option>
+    <option *ngFor="let item of dropdown" [value]="item">{{ item }}</option>
+  </select><br><br>
+
+  <label for="qualification">Qualification:</label>
+  <input type="text" id="qualification" [(ngModel)]="employee.qualification" placeholder="Enter qualification" />
+
+  <div class="status-container">
+    <label>Status:</label>
+    <input type="checkbox" [(ngModel)]="employee.isActive" id="status" />
+    <span>Active</span>
+  </div>
+
+  <button (click)="showEmployeeDetails()">Submit</button>
+</div>
+
+<!-- Custom popup container -->
+<app-employee-details-popup
+  *ngIf="showCustomPopup"
+  [employee]="employee"
+  (closePopupEvent)="closeCustomPopup($event)"
+></app-employee-details-popup>
